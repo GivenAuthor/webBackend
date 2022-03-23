@@ -1,0 +1,30 @@
+/* header */
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.top-banner a {
+    margin: auto 0;
+}
+
+nav {
+    background: var(--dark-gray);
+    display: flex;
+    justify-content: flex-start;
+    color: var(--white);
+    height: 50px;
+}
+
+nav a {
+    font-weight: 700;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background: var(--medium-gray);
+}
