@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap');
+
+:root {
+    --light-gray: #bababa;
+    --medium-gray: #8d8d8d;
+    --dark-gray: #3a3a3a;
+    --light-blue: #a6cbeb;
+    --dark-blue: #4c96d7;
+    --white: white;
+}
+
+/* Mobile CSS */
+body {
+    margin: 0;
+    font-family: "marvel", sans-serif;
+}
+
+main {
+    padding: 15px;
+}
+
+/* Desktop CSS */
+@media (min-width: 600px) {
+    body {
+        margin: 8px;
+        display: flex;
+        justify-content: space-around;
+        background-image: url("../images/site/checkerboard.jpg");
+    }
+
+    .content-wrapper {
+        border: 4px solid var(--light-blue);
+        max-width: 900px;
+        min-width: 500px;
+        width: 80vw;
+        background: white;
+        border-radius: 5px;
+    }
+}
