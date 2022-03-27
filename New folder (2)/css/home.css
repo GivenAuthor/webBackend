@@ -1,0 +1,110 @@
+/* Product Details */
+.description {
+    /* Are you sure this is dark enough for accessibility standards? */
+    color: var(--dark-blue);
+}
+
+.description h2 {
+    margin: 5px 0;
+}
+
+.description p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.vehicle-img {
+    max-width: 100%;
+
+    /*
+    This is the code needed to superimpose the product img behind the description.
+    Still not gonna do it b/c that's not responsive or reusable AT ALL.
+    position: relative;
+    top: -92px;
+    z-index: -1;
+    */
+ }
+
+.purchase {
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: var(--dark-blue);
+    color: var(--white)
+}
+
+.purchase.mobile {
+    display: block;
+    margin: 15px auto;
+}
+
+.purchase.desktop {
+    display: none;
+}
+
+
+/* Product upgrades */
+.upgrade-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.upgrade-wrapper {
+    width: 47%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upgrade-wrapper a {
+    text-align: center;
+    padding: 5px;
+}
+
+.upgrade-img-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: var(--light-blue);
+    border-radius: 5px;
+}
+
+.upgrade-img-wrapper img {
+    width: 65px;
+    height: 65px;
+}
+
+/* Desktop CSS */
+@media (min-width: 600px) {
+    /* Description CSS */
+    .purchase.desktop {
+        margin-top: 15px;
+        display: block;
+    }
+
+    .purchase.mobile {
+        display: none;
+    }
+
+    /* Product details */
+    aside.product-details {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .product-upgrades,
+    .product-reviews {
+        width: 47%;
+    }
+
+    /* Upgrade CSS */
+    .upgrade-wrapper:hover .upgrade-img-wrapper {
+        background: var(--dark-blue);
+    }
+    
+}

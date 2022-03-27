@@ -1,0 +1,11 @@
+/* Footer */
+footer {
+    border-top: 5px solid var(--dark-gray);
+    padding: 15px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+
